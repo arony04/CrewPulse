@@ -40,3 +40,9 @@ views/
 5. Show the Guide page: every number has a source or is labelled app design.
 
 Educational prototype, not a medical device.
+
+## Current limits and next step
+
+CrewPulse is a prototype. Today it uses simulated mission data and manual check-ins: the person types in their readings on the Check-in page. It is not connected to any real sensors.
+
+In a real mission, the same app would take its readings from crew health devices, such as a wearable for heart rate and temperature, a blood pressure cuff, a glucose meter, a radiation dosimeter and a sleep tracker. The analysis stays the same: status, drift from the person's own baseline, trends, alerts, and advice that changes with the ground-reply delay. Only the way the numbers arrive would change. Mood, social contact and food eaten would still be typed in, because no sensor measures them.
