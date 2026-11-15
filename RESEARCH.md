@@ -1,7 +1,7 @@
 # CrewPulse research file
 
 This file records where every number and claim in CrewPulse came from, how reliable each source is, and what the project does not cover.
-All sources were opened and checked on 2026-11-13 and 2026-11-14. A ticked box in the Verified column means the number was confirmed on the source page.
+All sources were opened and checked on 2026-11-13, 2026-11-14 and 2026-11-15. A ticked box in the Verified column means the number was confirmed on the source page.
 
 ## 1. Source reliability ranking
 
@@ -9,6 +9,7 @@ Sources are ranked from most to least reliable. Every source used in CrewPulse i
 
 1. **Space agencies and their researchers (used for anything astronaut-specific):**
    - NASA Human Research Program: hazards and risks pages
+   - NASA Human Spaceflight Standards, NASA-STD-3001 (Office of the Chief Health and Medical Officer): the Agency standard for crew health and medical care (Volume 1) and human factors and environmental health (Volume 2)
    - NASA Radiation Protection Technical Brief (career limit of 600 mSv)
    - NASA: Astronaut Exercise
    - NASA Technical Reports Server: Medical Data Architecture, Test Bed 1
@@ -58,7 +59,7 @@ Radiation context (Space.com, secondary, partly outdated): ISS about 300 mSv per
   Source: NTRS 20170000744
 - **Gap CrewPulse targets:** these systems serve clinicians and researchers. CrewPulse is for the astronaut who is not a doctor: plain explanations, drift from the person's own baseline, and advice that changes with the ground-reply delay. This was not compared against other Space Apps entries.
 
-## 5. Design decisions 
+## 5. Design decisions
 
 - Watch margins around each normal range exist so the app warns before a reading becomes serious.
 - Baseline is the first 14 days; a drift alert fires at 2.5 standard deviations (app design).
@@ -66,6 +67,7 @@ Radiation context (Space.com, secondary, partly outdated): ISS about 300 mSv per
 - The simulated mission (180 days, infection around days 112-116) only demonstrates the logic.
 - Moon and Mars daily radiation figures in `backend/environments.py` are assumptions.
 - Normal ranges are for healthy adults on Earth. In space, drift from a person's own baseline matters more.
+- NASA-STD-3001 is the reference for what NASA treats as crew health requirements, and the 600 mSv radiation limit comes from its Volume 1 (Rev B) through NASA's technical brief. CrewPulse does not implement the standard. Its advice is general guidance written for the prototype, and in-flight emergency procedures are operational documents held by NASA flight surgeons, which are not reproduced here.
 
 ## 6. Limitations and future work
 
