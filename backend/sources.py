@@ -10,6 +10,10 @@ SOURCES = {
     "nasa_hazards": {
         "title": "NASA Human Research Program: Hazards", "publisher": "NASA", "tier": "primary",
         "url": "https://www.nasa.gov/hrp/hazards", "used_for": "The five hazards of human spaceflight"},
+    "nasa_std_3001": {
+        "title": "NASA Human Spaceflight Standards (NASA-STD-3001)", "publisher": "NASA Office of the Chief Health and Medical Officer", "tier": "primary",
+        "url": "https://www.nasa.gov/ochmo/human-spaceflight-and-aviation-standards",
+        "used_for": "NASA's standard for crew health and medical care (Volume 1) and human factors and environmental health (Volume 2)"},
     "nasa_risks": {
         "title": "NASA Human Research Program: Risks", "publisher": "NASA", "tier": "primary",
         "url": "https://www.nasa.gov/hrp/risks", "used_for": "Health risks that follow from the hazards"},
